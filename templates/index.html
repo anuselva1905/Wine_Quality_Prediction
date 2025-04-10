@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Wine Quality Prediction Web App" />
+  <meta name="author" content="Your Name" />
+  <title>Wine Quality Prediction</title>
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link href="static/css/styles.css" rel="stylesheet" />
+  <link href="static/css2/style.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="form-v9 header-full">
+<!-- Navbar (Full Width) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-black" href="/">Wine Quality</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold text-black" href="/">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header (Full Width, Solid Background) -->
+<header class="text-black text-center py-2">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Wine Quality Prediction</h1>
+    <p class="lead">Check wine quality with ease — a simple and smart web app</p>
+  </div>
+</header>
+
+
+
+  <!-- Form Section -->
+  <section class="container px-4 px-lg-2 my-1">
+    <div class="page-content">
+      <div class="form-v9-content" style="background-image: url('static/assets/img/form-v9.jpg')">
+        <form class="form-detail" action="/predict" method="post">
+          <h2>Please Fill The Information</h2>
+
+          <!-- Input Fields -->
+          <div class="form-row-total">
+            <div class="form-row">
+              <input type="text" name="fixed_acidity" placeholder="Fixed Acidity" class="input-text" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="volatile_acidity" placeholder="Volatile Acidity" class="input-text" required>
+            </div>
+          </div>
+          <div class="form-row-total">
+            <div class="form-row">
+              <input type="text" name="citric_acid" placeholder="Citric Acid" class="input-text" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="residual_sugar" placeholder="Residual Sugar" class="input-text" required>
+            </div>
+          </div>
+          <div class="form-row-total">
+            <div class="form-row">
+              <input type="text" name="chlorides" placeholder="Chlorides" class="input-text" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="free_sulfur_dioxide" placeholder="Free Sulfur Dioxide" class="input-text" required>
+            </div>
+          </div>
+          <div class="form-row-total">
+            <div class="form-row">
+              <input type="text" name="total_sulfur_dioxide" placeholder="Total Sulfur Dioxide" class="input-text" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="density" placeholder="Density" class="input-text" required>
+            </div>
+          </div>
+          <div class="form-row-total">
+            <div class="form-row">
+              <input type="text" name="pH" placeholder="pH" class="input-text" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="sulphates" placeholder="Sulphates" class="input-text" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <input type="text" name="alcohol" placeholder="Alcohol" class="input-text" required>
+          </div>
+
+          <div class="form-row-last">
+            <input type="submit" class="register" value="Predict" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-top mt-5">
+    <div class="container text-center py-3">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/boktiarahmed73/">
+            <i class="fab fa-linkedin fa-2x text-dark"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/dswithbappy">
+            <i class="fab fa-youtube fa-2x text-dark"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/entbappy">
+            <i class="fab fa-github fa-2x text-dark"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="small text-muted">© 2025 Wine Quality Prediction App</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

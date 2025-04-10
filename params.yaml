@@ -1,2 +1,7 @@
+RandomForest:
+  n_estimators: 200  # Increase to 200 or more
+  max_depth: 15  # Increase depth if underfitting
+  min_samples_split: 5  # Increase to reduce overfitting
+  min_samples_leaf: 2  # Prevent small noisy splits
+  random_state: 42
 
-key: val
